@@ -1,0 +1,110 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "rds-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "rds:AddTagsToResource",
+                "rds:CreateCustomDBEngineVersion",
+                "rds:CreateDBCluster",
+                "rds:CreateDBClusterEndpoint",
+                "rds:CreateDBClusterParameterGroup",
+                "rds:CreateDBClusterSnapshot",
+                "rds:CreateDBInstance",
+                "rds:CreateDBInstanceReadReplica",
+                "rds:CreateDBParameterGroup",
+                "rds:CreateDBProxy",
+                "rds:CreateDBProxyEndpoint",
+                "rds:CreateDBSnapshot",
+                "rds:CreateDBSubnetGroup",
+                "rds:CreateEventSubscription",
+                "rds:CreateOptionGroup",
+                "rds:CreateTenantDatabase",
+                "rds:Copy*",
+                "rds:Describe*",
+                "rds:Download*",
+                "rds:List*",
+                "rds:Register*",
+                "rds:Start*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "ecr-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:BatchGetImage",
+                "ecr:BatchGetRepositoryScanningConfiguration",
+                "ecr:CreateRepository",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:GetLifecyclePolicy",
+                "ecr:GetLifecyclePolicyPreview",
+                "ecr:GetRegistryPolicy",
+                "ecr:GetRegistryScanningConfiguration",
+                "ecr:GetRepositoryPolicy",
+                "ecr:PutImage",
+                "ecr:PutImageTagMutability",
+                "ecr:Complete*",
+                "ecr:Describe*",
+                "ecr:Initiate*",
+                "ecr:List*",
+                "ecr:Start*",
+                "ecr:Tag*",
+                "ecr:Upload*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "s3-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutBucketAccelerateConfiguration",
+                "s3:PutBucketAnalyticsConfiguration",
+                "s3:PutBucketCors",
+                "s3:PutBucketIntelligentTieringConfiguration",
+                "s3:PutBucketInventoryConfiguration",
+                "s3:PutBucketLifecycle",
+                "s3:PutBucketLifecycleConfiguration",
+                "s3:PutBucketLogging",
+                "s3:PutBucketMetricsConfiguration",
+                "s3:PutBucketNotificationConfiguration",
+                "s3:PutBucketOwnershipControls",
+                "s3:PutBucketPolicy",
+                "s3:PutBucketReplication",
+                "s3:PutBucketRequestPayment",
+                "s3:PutBucketTagging",
+                "s3:PutBucketVersioning",
+                "s3:PutBucketWebsite",
+                "s3:PutObject",
+                "s3:PutObjectTagging",
+                "s3:PutPublicAccessBlock",
+                "s3:Complete*",
+                "s3:Copy*",
+                "s3:Create*",
+                "s3:Get*",
+                "s3:Head*",
+                "s3:List*",
+                "s3:Restore*",
+                "s3:Select*",
+                "s3:Upload*",
+                "s3:Write*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "elasticache-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "elasticache:Add*",
+                "elasticache:Copy*",
+                "elasticache:Create*",
+                "elasticache:Describe*",
+                "elasticache:Export*",
+                "elasticache:List*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

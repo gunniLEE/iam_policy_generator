@@ -1,8 +1,6 @@
-# iam_policy_generator
-
 ### Auto Create IAM Policy
 
-### Excel to Json
+### Excel to Json 
 
 ### AWS Service Classification
 [Infra]
@@ -29,3 +27,4 @@
 [Resource]
 - Resource Group : `resource-groups:*`
 - Systems Manager : `ssm:*`
+

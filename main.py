@@ -25,7 +25,7 @@ def generate_iam_policy(grouped_permissions):
 
     for service, actions_resources in grouped_permissions.items():
         statement = {
-            "Sid": f"{service.lower()}allowfordevops",
+            "Sid": f"{service.lower()}-allow-for-devops",
             "Effect": "Allow",
             "Action": actions_resources["Action"],
             "Resource": actions_resources["Resource"],
@@ -56,8 +56,7 @@ def main():
     for key, group in grouped_by_category_and_wildcard.items():
         category, wildcard, service = key
         service_effects = set(item['Service Effect'] for item in group)
-        if len(service_effects) == 1:
-            # Service Effect가 모두 같으면 하나로 처리
+        if iam_policy_data.service_effect[0] not in service_effects:
             action = f"{group[0]['Actions'].split(':')[0].lower()}:{wildcard}"
             grouped_actions.append({'Wildcard' : wildcard, 'Actions': action, 'Category': category, 'Service': service, 'Service Effect': service_effects.pop()})
 

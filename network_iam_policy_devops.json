@@ -1,0 +1,60 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "elb-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "elasticloadbalancing:AddTags",
+                "elasticloadbalancing:CreateListener",
+                "elasticloadbalancing:CreateLoadBalancer",
+                "elasticloadbalancing:CreateRule",
+                "elasticloadbalancing:CreateTargetGroup",
+                "elasticloadbalancing:Describe*",
+                "elasticloadbalancing:Get*",
+                "elasticloadbalancing:Modify*",
+                "elasticloadbalancing:Register*",
+                "elasticloadbalancing:Set*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "route53-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "route53:ChangeResourceRecordSets",
+                "route53:ChangeTagsForResource",
+                "route53:CreateCidrCollection",
+                "route53:CreateHealthCheck",
+                "route53:CreateHostedZone",
+                "route53:CreateQueryLoggingConfig",
+                "route53:CreateTrafficPolicy",
+                "route53:CreateTrafficPolicyInstance",
+                "route53:CreateTrafficPolicyVersion",
+                "route53:Associate*",
+                "route53:Get*",
+                "route53:List*",
+                "route53:Test*",
+                "route53:Update*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "cloudfront-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:Associate*",
+                "cloudfront:Copy*",
+                "cloudfront:Create*",
+                "cloudfront:Describe*",
+                "cloudfront:Get*",
+                "cloudfront:List*",
+                "cloudfront:Publish*",
+                "cloudfront:Put*",
+                "cloudfront:Tag*",
+                "cloudfront:Test*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "health-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "health:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "support-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "support:*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "system manager-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:CancelCommand",
+                "ssm:CreateDocument",
+                "ssm:Add*",
+                "ssm:Describe*",
+                "ssm:Get*",
+                "ssm:Label*",
+                "ssm:List*",
+                "ssm:Put*",
+                "ssm:Resume*",
+                "ssm:Send*",
+                "ssm:Start*",
+                "ssm:Stop*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "resource group-allow-for-devops",
+            "Effect": "Allow",
+            "Action": [
+                "resource-groups:Create*",
+                "resource-groups:Get*",
+                "resource-groups:Group*",
+                "resource-groups:List*",
+                "resource-groups:Put*",
+                "resource-groups:Search*",
+                "resource-groups:Tag*",
+                "resource-groups:Update*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
