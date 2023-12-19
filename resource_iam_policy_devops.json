@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "system manager-allow-for-devops",
+            "Sid": "system managerallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "ssm:CancelCommand",
@@ -21,7 +21,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "resource group-allow-for-devops",
+            "Sid": "resource groupallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "resource-groups:Create*",

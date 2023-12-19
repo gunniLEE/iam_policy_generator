@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "elb-allow-for-devops",
+            "Sid": "elballowfordevops",
             "Effect": "Allow",
             "Action": [
                 "elasticloadbalancing:AddTags",
@@ -19,7 +19,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "route53-allow-for-devops",
+            "Sid": "route53allowfordevops",
             "Effect": "Allow",
             "Action": [
                 "route53:ChangeResourceRecordSets",
@@ -40,7 +40,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "cloudfront-allow-for-devops",
+            "Sid": "cloudfrontallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "cloudfront:Associate*",

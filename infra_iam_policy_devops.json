@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "ec2/vpc-allow-for-devops",
+            "Sid": "ec2orvpcallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "ec2:AcceptReservedInstancesExchangeQuote",
@@ -95,7 +95,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "ecs-allow-for-devops",
+            "Sid": "ecsallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "ecs:CreateCluster",
@@ -115,7 +115,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "eks-allow-for-devops",
+            "Sid": "eksallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "eks:CreateAddon",

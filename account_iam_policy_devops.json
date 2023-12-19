@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "health-allow-for-devops",
+            "Sid": "healthallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "health:*"
@@ -10,7 +10,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "support-allow-for-devops",
+            "Sid": "supportallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "support:*"

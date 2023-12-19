@@ -25,7 +25,7 @@ def generate_iam_policy(grouped_permissions):
 
     for service, actions_resources in grouped_permissions.items():
         statement = {
-            "Sid": f"{service.lower()}-allow-for-devops",
+            "Sid": f"{service.lower()}allowfordevops",
             "Effect": "Allow",
             "Action": actions_resources["Action"],
             "Resource": actions_resources["Resource"],

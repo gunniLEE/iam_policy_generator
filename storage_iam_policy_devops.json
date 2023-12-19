@@ -2,7 +2,7 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "rds-allow-for-devops",
+            "Sid": "rdsallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "rds:AddTagsToResource",
@@ -31,7 +31,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "ecr-allow-for-devops",
+            "Sid": "ecrallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "ecr:BatchCheckLayerAvailability",
@@ -57,7 +57,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "s3-allow-for-devops",
+            "Sid": "s3allowfordevops",
             "Effect": "Allow",
             "Action": [
                 "s3:PutBucketAccelerateConfiguration",
@@ -94,7 +94,7 @@
             "Resource": "*"
         },
         {
-            "Sid": "elasticache-allow-for-devops",
+            "Sid": "elasticacheallowfordevops",
             "Effect": "Allow",
             "Action": [
                 "elasticache:Add*",
