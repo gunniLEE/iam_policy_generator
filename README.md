@@ -3,6 +3,7 @@
 ### Excel to Json 
 
 ### AWS Service Classification
+
 [Infra]
 - VPC : `ec2:*`
 - EC2 : `ec2:*`
@@ -15,7 +16,6 @@
 - Route53 : `route53:*`
 
 [Storage]
-- EBS : `ec2:*Volume*`
 - ECR : `ecr:*`
 - ElastiCache : `elasticache:*`
 - RDS : `rds:*`
@@ -28,3 +28,9 @@
 - Resource Group : `resource-groups:*`
 - Systems Manager : `ssm:*`
 
+[Mornitoring]
+- CloudWatch : `cloudwatch:*`
+
+[Resource]
+- SystemManager : `ssm:*`
+- ResourceGroup : `resource-groups:*`
