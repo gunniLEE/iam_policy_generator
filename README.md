@@ -1,4 +1,4 @@
-### Auto Create IAM Policy
+### Auto Create IAM Policy & Sync Policy
 
 ### Excel to Json 
 
