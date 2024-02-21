@@ -127,6 +127,24 @@
                 "eks:Tag*"
             ],
             "Resource": "*"
+        },
+        {
+            "Sid": "lambdaallowfordevops",
+            "Effect": "Allow",
+            "Action": [
+                "lambda:DeleteFunction",
+                "lambda:Add*",
+                "lambda:Create*",
+                "lambda:Get*",
+                "lambda:Invoke*",
+                "lambda:List*",
+                "lambda:Publish*",
+                "lambda:Put*",
+                "lambda:Tag*",
+                "lambda:Untag*",
+                "lambda:Update*"
+            ],
+            "Resource": "*"
         }
     ]
 }

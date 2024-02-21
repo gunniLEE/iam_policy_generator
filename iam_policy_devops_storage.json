@@ -2,35 +2,6 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "rdsallowfordevops",
-            "Effect": "Allow",
-            "Action": [
-                "rds:AddTagsToResource",
-                "rds:CreateCustomDBEngineVersion",
-                "rds:CreateDBCluster",
-                "rds:CreateDBClusterEndpoint",
-                "rds:CreateDBClusterParameterGroup",
-                "rds:CreateDBClusterSnapshot",
-                "rds:CreateDBInstance",
-                "rds:CreateDBInstanceReadReplica",
-                "rds:CreateDBParameterGroup",
-                "rds:CreateDBProxy",
-                "rds:CreateDBProxyEndpoint",
-                "rds:CreateDBSnapshot",
-                "rds:CreateDBSubnetGroup",
-                "rds:CreateEventSubscription",
-                "rds:CreateOptionGroup",
-                "rds:CreateTenantDatabase",
-                "rds:Copy*",
-                "rds:Describe*",
-                "rds:Download*",
-                "rds:List*",
-                "rds:Register*",
-                "rds:Start*"
-            ],
-            "Resource": "*"
-        },
-        {
             "Sid": "ecrallowfordevops",
             "Effect": "Allow",
             "Action": [
@@ -93,6 +64,38 @@
                 "s3:Object*",
                 "s3:Restore*",
                 "s3:Tag*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "rdsallowfordevops",
+            "Effect": "Allow",
+            "Action": [
+                "rds:Add*",
+                "rds:Apply*",
+                "rds:Authorzie*",
+                "rds:Backtrack*",
+                "rds:Cancel*",
+                "rds:Copy*",
+                "rds:Create*",
+                "rds:Delete*",
+                "rds:Deregister*",
+                "rds:Describe*",
+                "rds:Download*",
+                "rds:Failover*",
+                "rds:List*",
+                "rds:Modify*",
+                "rds:Promote*",
+                "rds:Purchase*",
+                "rds:Reboot*",
+                "rds:Register*",
+                "rds:Remove*",
+                "rds:Reset*",
+                "rds:Restore*",
+                "rds:Revoke*",
+                "rds:Start*",
+                "rds:Stop*",
+                "rds:Switch*"
             ],
             "Resource": "*"
         },

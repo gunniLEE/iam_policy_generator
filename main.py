@@ -35,7 +35,7 @@ def generate_iam_policy(grouped_permissions):
     return iam_policy
 
 def save_iam_policy_to_file(iam_policy, category, output_directory):
-    output_file_path = os.path.join(output_directory, f"{category.lower()}_iam_policy_devops.json")
+    output_file_path = os.path.join(output_directory, f"iam_policy_devops_{category.lower()}.json")
     with open(output_file_path, 'w') as json_file:
         json.dump(iam_policy, json_file, indent=4)
 
@@ -82,7 +82,7 @@ def main():
         grouped_permissions = group_permissions_by_service(items)
         iam_policy = generate_iam_policy(grouped_permissions)
         save_iam_policy_to_file(iam_policy, category, iam_policy_data.output_directory)
-        policy_data = preprocessiong_iam_policy.load_json_file(f"{category.lower()}_iam_policy_devops.json")
+        policy_data = preprocessiong_iam_policy.load_json_file(f"iam_policy_devops_{category.lower()}.json")
 
 if __name__ == "__main__":
     main()

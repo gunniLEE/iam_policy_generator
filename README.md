@@ -9,6 +9,7 @@
 - EC2 : `ec2:*`
 - ECS : `ecs:*`
 - EKS : `eks:*`
+- Lambda : `lambda:*`
 
 [Network]
 - ELB (ELB v2) : `elasticloadbalancing:*`

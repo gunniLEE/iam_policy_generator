@@ -1,2 +1,5 @@
 pandas
 openpyxl
+oauth2client
+gspread
+PyOpenSSL
